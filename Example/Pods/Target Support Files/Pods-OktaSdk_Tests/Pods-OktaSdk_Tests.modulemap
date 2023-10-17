@@ -1,0 +1,6 @@
+framework module Pods_OktaSdk_Tests {
+  umbrella header "Pods-OktaSdk_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

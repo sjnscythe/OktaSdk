@@ -1,0 +1,776 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C82BBBD5BD1FCB580F49D1A9151A74E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		1507EA800D38A0CE088F684E26A3C417 /* Pods-OktaSdk_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 091EE4CADA54C6A85B86BF1E10CA8ABA /* Pods-OktaSdk_Tests-dummy.m */; };
+		28F77203379BD3B278B611D435A4B2C9 /* Pods-OktaSdk_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EE7CAC7F6CFA7CCF5BADE15B88F2EBE /* Pods-OktaSdk_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D0F780D8E1065DA9E3EA97E6602EB4C /* OktaSdk-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A7DCD4634483015B2D9070C9E9E0AAFA /* OktaSdk-dummy.m */; };
+		69A7C904246ED99590A708E539DEE48C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		AAD49BAA7B299C10586F7BBE963C6F45 /* Pods-OktaSdk_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFCCD1031A2FEA24138A3F0FED201D2 /* Pods-OktaSdk_Example-dummy.m */; };
+		B77327EE3C02998CEE5D4B1E8ED68EBC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		BC539083EF95DEF56D5D4D95438FAAD3 /* OktaSdk-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 85BD7207A4044233FD64B5B3358CE79B /* OktaSdk-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD28FC295AB5C5BD03554A6356C4F315 /* Pods-OktaSdk_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 28978FDE3DC5785138D0981F5CF5DB89 /* Pods-OktaSdk_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5CB4E2CA6A2E89EE4042A64230D0662 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2C1BFC873EACB8D8F1028A4F17B726 /* ReplaceMe.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3238CB5A353D406EF02C60C0744F39AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E659F20432449582764167A97CB7B503;
+			remoteInfo = OktaSdk;
+		};
+		7ADC8D4A6811C5492A31B53869DEF89E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B2B3B4337ACB9CBBD126C6E3CB2B4F0;
+			remoteInfo = "Pods-OktaSdk_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03A98F546414D59C7A354614341D182D /* Pods-OktaSdk_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-OktaSdk_Tests"; path = Pods_OktaSdk_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		091EE4CADA54C6A85B86BF1E10CA8ABA /* Pods-OktaSdk_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OktaSdk_Tests-dummy.m"; sourceTree = "<group>"; };
+		16C1D6CA7E7BD572E1290D6ED6D3743E /* Pods-OktaSdk_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OktaSdk_Example.release.xcconfig"; sourceTree = "<group>"; };
+		1D1D7D0B10DF79FB416C214A0496621D /* Pods-OktaSdk_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OktaSdk_Example-Info.plist"; sourceTree = "<group>"; };
+		23DA484CD435E04FB2ED18A337193A8B /* Pods-OktaSdk_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OktaSdk_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		28978FDE3DC5785138D0981F5CF5DB89 /* Pods-OktaSdk_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OktaSdk_Example-umbrella.h"; sourceTree = "<group>"; };
+		28B9FC83CFC26CE084345FF6636ADDE7 /* Pods-OktaSdk_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OktaSdk_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		2A54F8C111367C3AE9F190C195AD0887 /* Pods-OktaSdk_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OktaSdk_Example-frameworks.sh"; sourceTree = "<group>"; };
+		2E9C9C9134F59486323F072511D132F5 /* Pods-OktaSdk_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-OktaSdk_Example"; path = Pods_OktaSdk_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4480FE776A182DC994D19E7A70958344 /* OktaSdk */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = OktaSdk; path = OktaSdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A4B111977497733324475D4285210CE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		5BB8B13BAA0BA5ABFB9436A0935B6C0D /* Pods-OktaSdk_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OktaSdk_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		6EFCCD1031A2FEA24138A3F0FED201D2 /* Pods-OktaSdk_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OktaSdk_Example-dummy.m"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		78E686FA94E5B79DA2D5BF77319949C2 /* Pods-OktaSdk_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OktaSdk_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7EE7CAC7F6CFA7CCF5BADE15B88F2EBE /* Pods-OktaSdk_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OktaSdk_Tests-umbrella.h"; sourceTree = "<group>"; };
+		85BD7207A4044233FD64B5B3358CE79B /* OktaSdk-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OktaSdk-umbrella.h"; sourceTree = "<group>"; };
+		870643E33B614F747409242252F942E2 /* OktaSdk-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "OktaSdk-Info.plist"; sourceTree = "<group>"; };
+		8A1633A52E7A3B3A61E55646C1252A6D /* Pods-OktaSdk_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OktaSdk_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8BBFABF690D86FB84E75BC486ECBF1DB /* OktaSdk.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = OktaSdk.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8FD11BD8EB77A2F79DC8D09690E62859 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A381773F328B0C14413FBB4DAB5026C2 /* OktaSdk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OktaSdk.debug.xcconfig; sourceTree = "<group>"; };
+		A3A1A5BBB8FD7B306C3188C66288D5FF /* OktaSdk-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OktaSdk-prefix.pch"; sourceTree = "<group>"; };
+		A56AD72942150981786E93460C1A837D /* Pods-OktaSdk_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OktaSdk_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		A7DCD4634483015B2D9070C9E9E0AAFA /* OktaSdk-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OktaSdk-dummy.m"; sourceTree = "<group>"; };
+		B138EFCE0FE49A7F044A275F1FBF0A74 /* Pods-OktaSdk_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OktaSdk_Tests.modulemap"; sourceTree = "<group>"; };
+		C7585478186161CF397A2200EB4DCD6F /* OktaSdk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OktaSdk.release.xcconfig; sourceTree = "<group>"; };
+		CC2C1BFC873EACB8D8F1028A4F17B726 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = OktaSdk/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		D715BE6514E14B2F88409D7DDF032731 /* Pods-OktaSdk_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OktaSdk_Tests-Info.plist"; sourceTree = "<group>"; };
+		DBD33F3AB0ABA1B47FC97F729DAEC52E /* OktaSdk.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = OktaSdk.modulemap; sourceTree = "<group>"; };
+		F19886DA8BE3B4C92D21B570A1F1CCC7 /* Pods-OktaSdk_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OktaSdk_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		F93728E1EB1C3CE960C40400710F1767 /* Pods-OktaSdk_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OktaSdk_Example.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1FCED7CDC6B22C626700796C78366B2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69A7C904246ED99590A708E539DEE48C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC37B6C312EA54DF41723CCEE5897E9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B77327EE3C02998CEE5D4B1E8ED68EBC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB2B3318981105A48A460173E5AD05A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C82BBBD5BD1FCB580F49D1A9151A74E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F769EF074743C220D53A4CDF93F36DC /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2CC2D61D8C66B810E4518354DAF7B6DC /* OktaSdk */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		2CC2D61D8C66B810E4518354DAF7B6DC /* OktaSdk */ = {
+			isa = PBXGroup;
+			children = (
+				CC2C1BFC873EACB8D8F1028A4F17B726 /* ReplaceMe.swift */,
+				6613356FBB731B1F162B38F055EF32AE /* Pod */,
+				E67E52B340CA03711BAF94858D1B9201 /* Support Files */,
+			);
+			name = OktaSdk;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6613356FBB731B1F162B38F055EF32AE /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				8FD11BD8EB77A2F79DC8D09690E62859 /* LICENSE */,
+				8BBFABF690D86FB84E75BC486ECBF1DB /* OktaSdk.podspec */,
+				4A4B111977497733324475D4285210CE /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		822D312E7B1E71F64B5970BF6C1DDCBF /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3C44ED3382A861CDCEB7B31E34B220E /* Pods-OktaSdk_Example */,
+				D2B4B50758A78D9CA00A56454A0E09E0 /* Pods-OktaSdk_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				0F769EF074743C220D53A4CDF93F36DC /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				E4C428873E0AA4E5BCF97E0A7A971C94 /* Products */,
+				822D312E7B1E71F64B5970BF6C1DDCBF /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2B4B50758A78D9CA00A56454A0E09E0 /* Pods-OktaSdk_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B138EFCE0FE49A7F044A275F1FBF0A74 /* Pods-OktaSdk_Tests.modulemap */,
+				8A1633A52E7A3B3A61E55646C1252A6D /* Pods-OktaSdk_Tests-acknowledgements.markdown */,
+				A56AD72942150981786E93460C1A837D /* Pods-OktaSdk_Tests-acknowledgements.plist */,
+				091EE4CADA54C6A85B86BF1E10CA8ABA /* Pods-OktaSdk_Tests-dummy.m */,
+				D715BE6514E14B2F88409D7DDF032731 /* Pods-OktaSdk_Tests-Info.plist */,
+				7EE7CAC7F6CFA7CCF5BADE15B88F2EBE /* Pods-OktaSdk_Tests-umbrella.h */,
+				23DA484CD435E04FB2ED18A337193A8B /* Pods-OktaSdk_Tests.debug.xcconfig */,
+				28B9FC83CFC26CE084345FF6636ADDE7 /* Pods-OktaSdk_Tests.release.xcconfig */,
+			);
+			name = "Pods-OktaSdk_Tests";
+			path = "Target Support Files/Pods-OktaSdk_Tests";
+			sourceTree = "<group>";
+		};
+		D3C44ED3382A861CDCEB7B31E34B220E /* Pods-OktaSdk_Example */ = {
+			isa = PBXGroup;
+			children = (
+				F93728E1EB1C3CE960C40400710F1767 /* Pods-OktaSdk_Example.modulemap */,
+				78E686FA94E5B79DA2D5BF77319949C2 /* Pods-OktaSdk_Example-acknowledgements.markdown */,
+				5BB8B13BAA0BA5ABFB9436A0935B6C0D /* Pods-OktaSdk_Example-acknowledgements.plist */,
+				6EFCCD1031A2FEA24138A3F0FED201D2 /* Pods-OktaSdk_Example-dummy.m */,
+				2A54F8C111367C3AE9F190C195AD0887 /* Pods-OktaSdk_Example-frameworks.sh */,
+				1D1D7D0B10DF79FB416C214A0496621D /* Pods-OktaSdk_Example-Info.plist */,
+				28978FDE3DC5785138D0981F5CF5DB89 /* Pods-OktaSdk_Example-umbrella.h */,
+				F19886DA8BE3B4C92D21B570A1F1CCC7 /* Pods-OktaSdk_Example.debug.xcconfig */,
+				16C1D6CA7E7BD572E1290D6ED6D3743E /* Pods-OktaSdk_Example.release.xcconfig */,
+			);
+			name = "Pods-OktaSdk_Example";
+			path = "Target Support Files/Pods-OktaSdk_Example";
+			sourceTree = "<group>";
+		};
+		E4C428873E0AA4E5BCF97E0A7A971C94 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4480FE776A182DC994D19E7A70958344 /* OktaSdk */,
+				2E9C9C9134F59486323F072511D132F5 /* Pods-OktaSdk_Example */,
+				03A98F546414D59C7A354614341D182D /* Pods-OktaSdk_Tests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E67E52B340CA03711BAF94858D1B9201 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DBD33F3AB0ABA1B47FC97F729DAEC52E /* OktaSdk.modulemap */,
+				A7DCD4634483015B2D9070C9E9E0AAFA /* OktaSdk-dummy.m */,
+				870643E33B614F747409242252F942E2 /* OktaSdk-Info.plist */,
+				A3A1A5BBB8FD7B306C3188C66288D5FF /* OktaSdk-prefix.pch */,
+				85BD7207A4044233FD64B5B3358CE79B /* OktaSdk-umbrella.h */,
+				A381773F328B0C14413FBB4DAB5026C2 /* OktaSdk.debug.xcconfig */,
+				C7585478186161CF397A2200EB4DCD6F /* OktaSdk.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/OktaSdk";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2791FF39E67830980AE5269E06B6C062 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28F77203379BD3B278B611D435A4B2C9 /* Pods-OktaSdk_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F06D68F3576026A0F19AC3BB3B5427B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC539083EF95DEF56D5D4D95438FAAD3 /* OktaSdk-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52DBAD7552346826D06B9FF24BD3C586 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD28FC295AB5C5BD03554A6356C4F315 /* Pods-OktaSdk_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1B2B3B4337ACB9CBBD126C6E3CB2B4F0 /* Pods-OktaSdk_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B36B6F2B1E9130EB9B9CB639824FA8C5 /* Build configuration list for PBXNativeTarget "Pods-OktaSdk_Example" */;
+			buildPhases = (
+				52DBAD7552346826D06B9FF24BD3C586 /* Headers */,
+				34CE7F567C5CCE9414A55F6862AD0311 /* Sources */,
+				EC37B6C312EA54DF41723CCEE5897E9D /* Frameworks */,
+				0D71920D81FCB70530CF2D94A17A4A78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5E416C45D78B0B80ED903CE6C374D17 /* PBXTargetDependency */,
+			);
+			name = "Pods-OktaSdk_Example";
+			productName = Pods_OktaSdk_Example;
+			productReference = 2E9C9C9134F59486323F072511D132F5 /* Pods-OktaSdk_Example */;
+			productType = "com.apple.product-type.framework";
+		};
+		E659F20432449582764167A97CB7B503 /* OktaSdk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B94E84E482A6738E413CEDD67AEE3C5 /* Build configuration list for PBXNativeTarget "OktaSdk" */;
+			buildPhases = (
+				4F06D68F3576026A0F19AC3BB3B5427B /* Headers */,
+				A56F4EB4072221118B3BE165174C22FC /* Sources */,
+				FB2B3318981105A48A460173E5AD05A2 /* Frameworks */,
+				A917225E50B83444802A46065F6D288E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OktaSdk;
+			productName = OktaSdk;
+			productReference = 4480FE776A182DC994D19E7A70958344 /* OktaSdk */;
+			productType = "com.apple.product-type.framework";
+		};
+		F4F50E6C30AAE6710D461CC5D43B8C6E /* Pods-OktaSdk_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A642226CE3813D9B6DDE70ED45F129C5 /* Build configuration list for PBXNativeTarget "Pods-OktaSdk_Tests" */;
+			buildPhases = (
+				2791FF39E67830980AE5269E06B6C062 /* Headers */,
+				C076D3D0541CCA8923C66C640E6C4744 /* Sources */,
+				1FCED7CDC6B22C626700796C78366B2C /* Frameworks */,
+				8D36F42FD4AA934CC247BDCB7C195F49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A07F0954CCB539E3FE2C7EBDD700B9D /* PBXTargetDependency */,
+			);
+			name = "Pods-OktaSdk_Tests";
+			productName = Pods_OktaSdk_Tests;
+			productReference = 03A98F546414D59C7A354614341D182D /* Pods-OktaSdk_Tests */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = E4C428873E0AA4E5BCF97E0A7A971C94 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E659F20432449582764167A97CB7B503 /* OktaSdk */,
+				1B2B3B4337ACB9CBBD126C6E3CB2B4F0 /* Pods-OktaSdk_Example */,
+				F4F50E6C30AAE6710D461CC5D43B8C6E /* Pods-OktaSdk_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0D71920D81FCB70530CF2D94A17A4A78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D36F42FD4AA934CC247BDCB7C195F49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A917225E50B83444802A46065F6D288E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		34CE7F567C5CCE9414A55F6862AD0311 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAD49BAA7B299C10586F7BBE963C6F45 /* Pods-OktaSdk_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A56F4EB4072221118B3BE165174C22FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D0F780D8E1065DA9E3EA97E6602EB4C /* OktaSdk-dummy.m in Sources */,
+				E5CB4E2CA6A2E89EE4042A64230D0662 /* ReplaceMe.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C076D3D0541CCA8923C66C640E6C4744 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1507EA800D38A0CE088F684E26A3C417 /* Pods-OktaSdk_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5A07F0954CCB539E3FE2C7EBDD700B9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-OktaSdk_Example";
+			target = 1B2B3B4337ACB9CBBD126C6E3CB2B4F0 /* Pods-OktaSdk_Example */;
+			targetProxy = 7ADC8D4A6811C5492A31B53869DEF89E /* PBXContainerItemProxy */;
+		};
+		F5E416C45D78B0B80ED903CE6C374D17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OktaSdk;
+			target = E659F20432449582764167A97CB7B503 /* OktaSdk */;
+			targetProxy = 3238CB5A353D406EF02C60C0744F39AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		24C521787243840896E6497EC6EA3D4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7585478186161CF397A2200EB4DCD6F /* OktaSdk.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OktaSdk/OktaSdk-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OktaSdk/OktaSdk-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OktaSdk/OktaSdk.modulemap";
+				PRODUCT_MODULE_NAME = OktaSdk;
+				PRODUCT_NAME = OktaSdk;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5CA619E6E125C33BE7214DF571F5FB76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F19886DA8BE3B4C92D21B570A1F1CCC7 /* Pods-OktaSdk_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-OktaSdk_Example/Pods-OktaSdk_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OktaSdk_Example/Pods-OktaSdk_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7C43874D8FC4704F74427C9111BC74D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23DA484CD435E04FB2ED18A337193A8B /* Pods-OktaSdk_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-OktaSdk_Tests/Pods-OktaSdk_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OktaSdk_Tests/Pods-OktaSdk_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		83278A0FCCF4C2FB11027417B1A448FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A381773F328B0C14413FBB4DAB5026C2 /* OktaSdk.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OktaSdk/OktaSdk-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OktaSdk/OktaSdk-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OktaSdk/OktaSdk.modulemap";
+				PRODUCT_MODULE_NAME = OktaSdk;
+				PRODUCT_NAME = OktaSdk;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		DC944DE38D9EC23F7F0AC15A2DE6FCD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16C1D6CA7E7BD572E1290D6ED6D3743E /* Pods-OktaSdk_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-OktaSdk_Example/Pods-OktaSdk_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OktaSdk_Example/Pods-OktaSdk_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E19CC49C39D75F5F9FCF119AC4FFDD31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28B9FC83CFC26CE084345FF6636ADDE7 /* Pods-OktaSdk_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-OktaSdk_Tests/Pods-OktaSdk_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OktaSdk_Tests/Pods-OktaSdk_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0B94E84E482A6738E413CEDD67AEE3C5 /* Build configuration list for PBXNativeTarget "OktaSdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83278A0FCCF4C2FB11027417B1A448FC /* Debug */,
+				24C521787243840896E6497EC6EA3D4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
+				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A642226CE3813D9B6DDE70ED45F129C5 /* Build configuration list for PBXNativeTarget "Pods-OktaSdk_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C43874D8FC4704F74427C9111BC74D4 /* Debug */,
+				E19CC49C39D75F5F9FCF119AC4FFDD31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B36B6F2B1E9130EB9B9CB639824FA8C5 /* Build configuration list for PBXNativeTarget "Pods-OktaSdk_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CA619E6E125C33BE7214DF571F5FB76 /* Debug */,
+				DC944DE38D9EC23F7F0AC15A2DE6FCD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

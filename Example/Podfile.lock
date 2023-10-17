@@ -1,0 +1,16 @@
+PODS:
+  - OktaSdk (0.1.0)
+
+DEPENDENCIES:
+  - OktaSdk (from `../`)
+
+EXTERNAL SOURCES:
+  OktaSdk:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  OktaSdk: 25abf43ecc9502a55beaad28cac3997a5e1ac88f
+
+PODFILE CHECKSUM: ec3ec6b3628ead687cb98ec4ffda392623aaf494
+
+COCOAPODS: 1.13.0
